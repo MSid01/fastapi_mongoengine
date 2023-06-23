@@ -7,7 +7,9 @@ app = FastAPI()
 connect(
     db="test",
     host="mongodb",
-    port=27017
+    port=27017,
+    username="root",
+    password="example"
 )
 
 class User(Document):
