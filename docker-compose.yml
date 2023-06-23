@@ -5,12 +5,12 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8000:8000
+      - 80:8000
     depends_on:
       - mongodb
 
   mongodb:
-    image: mongo:4.2.0
+    image: mongo
     ports:
       - 27017:27017
     volumes:
